@@ -117,6 +117,8 @@ export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 
 alias zshrc="code ~/.zshrc"
 alias gc="git checkout"
+alias gs="git status --short"
+alias gd="git diff"
 alias gpull="git pull"
 alias gpush="git push"
 alias gbranch="git checkout -b"

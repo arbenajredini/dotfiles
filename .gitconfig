@@ -1,0 +1,27 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Arben Ajredini
+	email = arbenajredini55@gmail.com
+[core]
+	excludesfile = /Users/endrit/.gitignore_global
+	compression = 9
+	whitespace = error
+	preloadindex = true
+[advice]
+	addEmptyPathSpec = false
+	pushNonFastForward = false
+	statusHints = false
+[status]
+	branch = true
+	showStash = true
+	showUntrackedFiles = all
+[diff]
+	context = 3
+	renames = copies
+	interHunkContext = 10
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
