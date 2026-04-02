@@ -22,14 +22,8 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Setup lazy.nvim
-require("lazy").setup({
-  spec = {
-    -- import your plugins
-    { import = "plugins" },
-  },
-  -- Configure any other settings here
-  install = { colorscheme = { "habamax" } }, -- colorscheme used during installation
-  checker = { enabled = true }, -- automatically check for plugin updates
-  change_detection = { notify = false }, -- disable notification on config change
+require("lazy").setup("plugins", {
+  install = { colorscheme = { "habamax" } },
+  checker = { enabled = true },
+  change_detection = { notify = false },
 })
