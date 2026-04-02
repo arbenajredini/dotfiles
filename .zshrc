@@ -100,8 +100,6 @@ alias py2='python2'
 alias pip='pip3'
 alias venv='python3 -m venv venv && source venv/bin/activate'
 alias activate='source venv/bin/activate'
-alias deactivate='deactivate'
-
 
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
